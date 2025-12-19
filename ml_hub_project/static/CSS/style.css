@@ -1,0 +1,36 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+  font-weight:700;
+  background: linear-gradient(90deg,#ff4d4d,#ffd700);
+  color: transparent;
+  background-clip: text;
+}
+
+.hero{
+  min-height:100vh;
+  background: linear-gradient(
+    120deg,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.4)
+  ),
+  url("https://images.pexels.com/photos/19955775/pexels-photo-19955775.jpeg")
+  center/cover no-repeat;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+
+.card{
+  transition:0.3s ease;
+}
+.card:hover{
+  transform: translateY(-8px);
+}
+
+footer{
+  background:#111;
+  color:#aaa;
+}

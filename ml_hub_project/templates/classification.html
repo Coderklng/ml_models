@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Model Input</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{ background:#f4f6f9; }
+.card{ border-radius:14px; }
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <div class="card shadow p-4">
+        <h4 class="fw-bold mb-3">Model Prediction</h4>
+
+        <form method="POST" action="/classify_predict">
+
+          <select name="model" class="form-select mb-3" required>
+            <option value="">Select Model</option>
+            <option value="linear">Logistic Regression</option>
+            <option value="logistic">Random Forest Classisfier</option>
+            <option value="rf">KNN Classifier</option>
+          </select>
+
+          <input name="f1"  class="form-control mb-3" placeholder="price">
+          <input name="f2" class="form-control mb-3" placeholder="discount">
+          <input name="f3" class="form-control mb-3" placeholder="units_sold">
+
+          <button class="btn btn-dark w-100">
+            Run Prediction
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
